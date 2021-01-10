@@ -2,6 +2,9 @@
 # Changes for CGI::URI2param
 #-----------------------------------------------------------------
 
+{{$NEXT}}
+    - DEPRECATED!
+
 
 1.01    2006-09-30
     - no changes / additions to functionality, this is a purly housekeeping

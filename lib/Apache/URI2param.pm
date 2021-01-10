@@ -11,10 +11,15 @@
 
 package Apache::URI2param;
 
+# ABSTRACT: PerlInitHandler to use with CGI::URI2param
+# VERSION
+
 use strict;
 use Carp;
 use Apache::Request 0.33 ();
 use CGI::URI2param qw(uri2param);
+
+warn __PACKAGE__ .' is DEPRECATED, please do not use this module anymore';
 
 $Apache::URI2param::VERSION = '1.01';
 
@@ -40,11 +45,9 @@ sub handler {
 
 __END__
 
-=head1 NAME
-
-Apache::URI2param - PerlInitHandler to use with CGI::URI2param
-
 =head1 SYNOPSIS
+
+DEPRECATED! Please do not use this module any more!
 
 in your httpd.conf
 
@@ -61,6 +64,10 @@ in your httpd.conf
   </Location>
 
 =head1 DESCRIPTION
+
+DEPRECATED! Please do not use this module any more!
+
+Here are the old docs:
 
 Apache::URI2param is a small PerlInitHandler to wrap around
 L<CGI::URI2param> so you don't have to call CGI::URI2param::uri2param
@@ -113,31 +120,7 @@ other phases.
 C<handler> basically just generates a hash of param names and regexes and
 passes the hash to L<CGI::URI2param::uri2param> for processing there.
 
-=head1 INSTALLATION
-
-Apache::URI2param gets installed along with CGI::URI2param
-
-=head1 REQUIRES
-
-Apache::Request (0.33)
-
 =head1 SEE ALSO
 
 L<CGI::URI2param>
-
-=head1 AUTHOR
-
-Thomas Klausner, domm@zsi.at, http://domm.zsi.at
-
-Thanks Darren Chamberlain <dlc@users.sourceforge.net> for the idea
-to write a mod_perl handler for CGI::URI2param
-
-=head1 COPYRIGHT & LICENSE
-
-Copyright 2002, 2006 Thomas Klausner, All Rights Reserved.
-
-This program is free software; you can redistribute it and/or modify it
-under the same terms as Perl itself.
-
-=cut
 
