@@ -11,7 +11,7 @@
 
 package Apache::URI2param;
 
-# ABSTRACT: PerlInitHandler to use with CGI::URI2param
+# ABSTRACT: DEPRECATED - PerlInitHandler to use with CGI::URI2param
 # VERSION
 
 use strict;

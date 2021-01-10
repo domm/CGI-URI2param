@@ -11,7 +11,7 @@
 
 package CGI::URI2param;
 
-# ABSTRACT: convert parts of an URL to param values
+# ABSTRACT: DEPRECATED - convert parts of an URL to param values
 # VERSION
 
 warn __PACKAGE__ .' is DEPRECATED, please do not use this module anymore';
