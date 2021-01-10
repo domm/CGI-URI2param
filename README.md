@@ -1,10 +1,10 @@
 # NAME
 
-CGI::URI2param - convert parts of an URL to param values
+CGI::URI2param - DEPRECATED - convert parts of an URL to param values
 
 # VERSION
 
-version 1.02
+version 1.03
 
 # SYNOPSIS
 
